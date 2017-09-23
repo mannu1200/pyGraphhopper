@@ -1,0 +1,5 @@
+target/*
+*/*.class
+osm_work_dir/*
+!osm_work_dir/.gitkeep
+.DS_Store
