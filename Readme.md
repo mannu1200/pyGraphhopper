@@ -8,11 +8,11 @@ It uses py4j to bridge between java and python.
 1. Java
 2. Python 
 3. py4j python module globally
-4. The pbf file of open street map for the locality you want to work on. (e.g. http://download.geofabrik.de/asia/indonesia-latest.osm.pbf)
+4. The pbf file of open street map for the locality you want to work upon. (e.g. http://download.geofabrik.de/asia/indonesia-latest.osm.pbf)
 
 ### Installing
 
-1. Get the pbf file desired location. e.g.
+1. Get the pbf file at desired dir. e.g.
 ```
 wget http://download.geofabrik.de/asia/indonesia-latest.osm.pbf
 ```
@@ -31,7 +31,7 @@ mvn install
 java -cp ./target/route_distance-1.0-SNAPSHOT.jar:./target/dependency/* pygraphhopper.Gateway
 ```
 
-4. You can call the APIs from python now.
+4. APIs are ready to be called form python:
 
 ```
 from py4j.java_gateway import JavaGateway
@@ -56,9 +56,7 @@ routeCalculator.getDistance(orig_lat, orig_lon, dest_lat, dest_lon, "car")
 Add more APIs provided by graphhopper, only calculate route distance is being provided right now.
 
 ## Contribution 
-Be the part of this `revolutionary world changing project` :P . Pick something from TODO list and raise PR. :)
-
-Earn as many thanks as possible.
+Pick something from TODO list and raise PR. :) Earn as many thanks as possible.
 
 ## License
 
